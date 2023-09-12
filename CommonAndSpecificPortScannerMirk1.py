@@ -20,11 +20,11 @@ def get_ports():
         ports_option = input("Please select a scanning option:\n[1] - Full Port Scan\n[2] - Common Ports\n[3] - Specific Port\n[q] - Quit\n>> ")
         if ports_option == "1":
             print("Scanning all ports")
-            ports = range(1, 65536)  # Corrected the range to include port 65535
+            ports = range(1, 65536)
             return ports
         elif ports_option == "2":
             print("Scanning common ports")
-            ports = [20, 21, 22, 23, 25, 53, 69, 80, 110, 443, 445]
+            ports = [20, 21, 22, 23, 25, 69, 137, 139, 445, 53, 443, 80, 8080, 8443]
             return ports
         elif ports_option == "3":
             specific_port = input("Please enter the port you want to scan >> ")
