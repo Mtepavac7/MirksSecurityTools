@@ -1,4 +1,4 @@
-# PortScanner
+# MirksPortScanner
 
 MirksPortScanner is a Python built Port Scanner tool used to scan a target IP address to see if there are any open ports. 
 
